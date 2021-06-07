@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/makeOffer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MakeOffer"
+    android:background="@color/white"
+    android:layout_marginTop="65dp"
+    android:layout_marginBottom="60dp">
+
+    <LinearLayout
+        android:id="@+id/offer_layout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="#e26e94"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/barterItem"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:height="40dp"
+            android:background="@drawable/input_shape"
+            android:fontFamily="@font/roboto"
+            android:hint="What are you bartering?"
+            android:textColorHint="@color/gray"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/barterValue"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:height="40dp"
+            android:background="@drawable/input_shape"
+            android:fontFamily="@font/roboto"
+            android:hint="How much is the item's value?"
+            android:textColorHint="@color/gray"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/barterCondition"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:height="40dp"
+            android:background="@drawable/input_shape"
+            android:fontFamily="@font/roboto"
+            android:hint="Condition"
+            android:textColorHint="@color/gray"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/barterDetails"
+            android:layout_width="330dp"
+            android:layout_height="90dp"
+            android:height="40dp"
+            android:background="@drawable/input_shape"
+            android:fontFamily="@font/roboto"
+            android:hint="Details"
+            android:ems="10"
+            android:gravity="start|top"
+            android:textColorHint="@color/gray"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/input_shape">
+
+            <Button
+                android:id="@+id/addPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Add Photo"
+                android:textAllCaps="false"
+                android:textColor="@color/kalakal_color"
+                android:textSize="18sp"
+                app:cornerRadius="8dp" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/barterImage"
+                android:layout_width="330dp"
+                android:layout_height="130dp"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:id="@+id/offer_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelOffer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:cornerRadius="8dp" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/sendOffer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:textColor="@color/kalakal_color"
+                android:textSize="20sp"
+                app:cornerRadius="8dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

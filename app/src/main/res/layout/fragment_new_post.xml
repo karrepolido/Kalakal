@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/makeOffer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewPost"
+    android:background="@color/white"
+    android:layout_marginTop="55dp"
+    android:layout_marginBottom="65dp">
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/kalakal_color"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="8dp"
+            android:contentDescription="Profile Photo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/profilePhoto"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/user_name"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/userAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="@string/user_address"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        app:layout_constraintTop_toBottomOf="@+id/profile_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/newListing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_listing"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/cancelPost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/kalakal_color"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_below="@id/newListing"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/input_shape_border">
+
+                <Button
+                    android:id="@+id/addProdPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/add_photo"
+                    android:textAllCaps="false"
+                    android:textColor="@color/kalakal_color"
+                    android:textSize="18sp"
+                    app:cornerRadius="8dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/pImage"
+                    android:layout_width="300dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal" >
+
+                <EditText
+                    android:id="@+id/pName"
+                    android:layout_width="330dp"
+                    android:layout_height="50dp"
+                    android:height="40dp"
+                    android:background="@drawable/input_shape_border"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/title"
+                    android:textColorHint="@color/gray"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <EditText
+                    android:id="@+id/pCategory"
+                    android:layout_width="330dp"
+                    android:layout_height="50dp"
+                    android:height="40dp"
+                    android:background="@drawable/input_shape_border"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/category"
+                    android:textColorHint="@color/gray"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <EditText
+                    android:id="@+id/pValue"
+                    android:layout_width="330dp"
+                    android:layout_height="50dp"
+                    android:height="40dp"
+                    android:background="@drawable/input_shape_border"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/value_of_item"
+                    android:textColorHint="@color/gray"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <EditText
+                    android:id="@+id/pCondition"
+                    android:layout_width="330dp"
+                    android:layout_height="50dp"
+                    android:height="40dp"
+                    android:background="@drawable/input_shape_border"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/condition"
+                    android:textColorHint="@color/gray"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <EditText
+                    android:id="@+id/pDesc"
+                    android:layout_width="330dp"
+                    android:layout_height="90dp"
+                    android:height="40dp"
+                    android:background="@drawable/input_shape_border"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/description"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:textColorHint="@color/gray"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <EditText
+                    android:id="@+id/pTags"
+                    android:layout_width="330dp"
+                    android:layout_height="50dp"
+                    android:height="40dp"
+                    android:background="@drawable/input_shape_border"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/tags"
+                    android:textColorHint="@color/gray"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <EditText
+                    android:id="@+id/pAvailability"
+                    android:layout_width="330dp"
+                    android:layout_height="50dp"
+                    android:height="40dp"
+                    android:background="@drawable/input_shape_border"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/availability"
+                    android:textColorHint="@color/gray"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="5"
+                    android:text="@string/agreement"
+                    android:textColor="@color/gray"
+                    android:fontFamily="@font/poppins_light"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <Button
+                    android:id="@+id/newPost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/kalakal_color"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/post"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:cornerRadius="8dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "920401908670",
+    "firebase_url": "https://kalakal-7fe64-default-rtdb.firebaseio.com",
+    "project_id": "kalakal-7fe64",
+    "storage_bucket": "kalakal-7fe64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920401908670:android:1bdb0d4742d3373579dfef",
+        "android_client_info": {
+          "package_name": "com.jkrepolido.kalakal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920401908670-9rbnq5o8i554am5ndra5m50ms9pb2cpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQraQ6tfpow00aigK0PKptvSNneTsJ01Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920401908670-9rbnq5o8i554am5ndra5m50ms9pb2cpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

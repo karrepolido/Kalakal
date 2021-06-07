@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name" translatable="false">Kalakal</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kalakal" translatable="false">kalakal</string>
+    <string name="forgot_password" translatable="false">Forgot Password?</string>
+    <string name="log_in" translatable="false">Log in</string>
+    <string name="create_account" translatable="false">Don\'t have an account? Sign up now.</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="email_address" translatable="false">E-mail Address</string>
+    <string name="register" translatable="false">Register</string>
+    <string name="has_account" translatable="false">Already have an account? Log in now.</string>
+    <string name="address" translatable="false">Address</string>
+    <string name="full_name" translatable="false">Full Name</string>
+    <string name="product_title">Product Title</string>
+    <string name="product_description">Product Description</string>
+    <string name="user_address">User Address</string>
+    <string name="user_name">User Name</string>
+    <string name="categories">Categories</string>
+    <string name="agreement">All listings go through quick standard review when published to make sure they follow our Commerce Policies before they are visible to others. Items like animals, drugs, weapons,
+counterfeits, and more are not allowed.</string>
+    <string name="sorry_this_page_is_under_maintenance">Sorry. This page is under maintenance.</string>
+    <string name="clothing">Clothing</string>
+    <string name="carpentry">Carpentry</string>
+    <string name="computer">Computer</string>
+    <string name="automobile">Automobile</string>
+    <string name="food">Food</string>
+    <string name="stationery">Stationery</string>
+    <string name="sports">Sports</string>
+    <string name="painting">Painting</string>
+    <string name="jewelry">Jewelry</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="games">Games</string>
+    <string name="mobile">Mobile</string>
+    <string name="new_listing">New Listing</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="title">Title</string>
+    <string name="category">Category</string>
+    <string name="value_of_item">Value of Item</string>
+    <string name="condition">Condition</string>
+    <string name="description">Description</string>
+    <string name="tags">Tags</string>
+    <string name="availability">Availability</string>
+    <string name="post">Post</string>
+</resources>
